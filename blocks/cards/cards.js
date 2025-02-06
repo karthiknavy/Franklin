@@ -11,6 +11,7 @@ export default function decorate(block) {
       else div.className = 'cards-card-body';
     });
     ul.append(li);
+    li.querySelector("div:last-child").classList.add('card-highlight');
   });
   ul.querySelectorAll('img').forEach((img) => img.closest('picture').replaceWith(createOptimizedPicture(img.src, img.alt, false, [{ width: '750' }])));
   block.textContent = '';
@@ -39,6 +40,23 @@ if(cards){
     cards[0].classList.add("card-details")
     cards[1].classList.add("card-details")
 }
-
-
+document.querySelectorAll(".card-highlight").forEach((ele) => {
+  ele.closest(".cards").classList.add('large-cards');
+}); 
+let liEle = document.querySelectorAll(".large-cards ul li"); 
+let paraLen =  document.querySelectorAll(".large-cards ul li:first-child .cards-card-image > p").length;
+if(paraLen < 2) {
+  liEle.forEach((li) => {
+    let cardBtn = li.querySelector("div:last-child p:nth-child(1)").innerHTML;
+    let cardRating = li.querySelector("div:last-child p:nth-child(2)").innerHTML;
+    let imgEle = li.querySelector(".cards-card-image");
+    let btnP = document.createElement('p');
+    let logoP = document.createElement('p');
+    logoP.innerHTML = cardRating;
+    btnP.innerHTML = cardBtn;
+    imgEle.append(logoP)
+    imgEle.append(btnP);
+  });  
+}
+  
 }
