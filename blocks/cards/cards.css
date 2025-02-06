@@ -133,7 +133,7 @@ body > main > div:nth-child(6) > div > div > ul > li .cards-card-body .button-co
 .section.cards-container.card-details ul{
   padding-left:0px;
   display: grid;
-grid-template-columns: repeat(2, 1fr);
+grid-template-columns: repeat(1, 1fr);
   row-gap:2rem;
   column-gap:2rem;
     list-style-type:none !important;
@@ -147,28 +147,16 @@ grid-template-columns: repeat(2, 1fr);
     padding-right: 1.5rem;
     position:relative;
     display:grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(12, 1fr);
 }
 
-.section.cards-container.card-details ul li .cards-card-body p:first-of-type{
-position: absolute;
-left:1.5rem;
-top: 22rem;
-text-decoration: underline;
-color: #0a41c5;
-font-size: 0.875rem;
-}
 .section.cards-container.card-details ul li .cards-card-body p,h5{
-  left: 11.5rem;
-  right: 10rem;
-  width: 61%;
   position: relative;
   font-size: .875rem;
   line-height: 1.25;
   font-family: HelveticaNeueLTW06-65Medium,"Helvetica Neue",Helvetica,Arial,sans-serif;
   margin: 0 0 1rem;
   color: #2c2c2c;
-  /* font-family: HelveticaNeueLTW04-55Roman,"Helvetica Neue",Helvetica,Arial,sans-serif; */
 }
 .section.cards-container.card-details ul li .cards-card-body h5{
 font-size:1rem;
@@ -186,19 +174,11 @@ margin-bottom: 0;
 font-family: HelveticaNeueLTW06-65Medium,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
-.section.cards-container.card-details .cards-card-image{
-  top: 138px;
-  position:absolute;
-  left:1.5rem;
-  /* width:250px; */
-}
 .section.cards-container.card-details .cards-card-image img{
 max-width: 7.8125rem;
   max-height: 12.5rem;
 }
 .section.cards-container.card-details .cards-card-body h3{
-  position:absolute;
-  top: 20px;
   background-color: transparent;
   color: #2c2c2c;
   margin-bottom: 8px;
@@ -231,36 +211,7 @@ color: #0a41c5;
       text-decoration: underline; 
 }
 
-.section.cards-container.card-details ul li .cards-card-body:last-of-type{
-padding-bottom: 1.5rem;
-/* width: 100%; */
-text-align: center;
-margin-top: 3rem;
-}
-.section.cards-container.card-details ul li .cards-card-body:last-of-type a:first-of-type{
- border: 0.0625rem solid #0a41cf;
- background-color: #0a41cf;
- color: #fff;
- border-radius: 0.25rem;
- font-family: inherit;
- float: left;
- font-size: 1rem;
- text-align: center;
- padding: 0.75rem 5.5rem;
- /* width: 50%; */
- text-decoration:none;
-}
 
-.section.cards-container.card-details ul li .cards-card-body:last-of-type a{
- font-size: 1rem;
- text-align: center;
- padding: 0.75rem 3.5rem;
- text-decoration:underline;
- /* margin-bottom:12px; */
- color: #0a41c5;
- /* width: 50%; */
- /* float: right; */
-}
 
 #build-credit-for-tomorrow19{
 font-size: 2.5rem;
@@ -318,7 +269,7 @@ body > main > div:nth-child(5){
     padding-left: 1.25rem;
     padding-top: 0px;
     padding-right: 1.25rem;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(12, 1fr);
 }
 .section.cards-container.card-details .cards-card-body h3{
   position:relative;
@@ -338,11 +289,8 @@ body > main > div:nth-child(5){
 }
 
 .section.cards-container.card-details .cards-card-image{
-  top: 1.5rem;
-  position:absolute;
-  right: 1.5rem;
-  /* width:250px; */
   left: unset;
+  grid-column: auto / span 2;
 }
 .section.cards-container.card-details .cards-card-image img{
     max-width: 3.75rem;
@@ -351,7 +299,6 @@ body > main > div:nth-child(5){
 
 .section.cards-container.card-details ul li .cards-card-body p,h5{
   left: 0;
-  right: 10rem;
   width: 100%;
 }
 .section.cards-container.card-details ul li .cards-card-body p:first-of-type{
@@ -364,7 +311,7 @@ font-size: 0.625rem;
 .section.cards-container.card-details ul li .cards-card-body:last-of-type{
   margin-top: 1rem;
   padding-bottom: 2.5rem;
-  max-wiwidth: 100%;
+  max-width: 100%;
 }
 .section.cards-container.card-details ul li .cards-card-body:last-of-type a:first-of-type{
   max-width: 100%;
@@ -404,7 +351,7 @@ font-size: 0.625rem;
 .section.cards-container.card-details ul{
   padding-left:0px;
   display: grid;
-grid-template-columns: repeat(2, 1fr);
+grid-template-columns: repeat(1, 1fr);
   row-gap:2rem;
   column-gap:2rem;
     list-style-type:none !important;
@@ -413,36 +360,36 @@ grid-template-columns: repeat(2, 1fr);
 .section.cards-container.card-details ul li{
     border: 0.0625rem solid #cdcdd3;
     border-radius: 0.5rem;
-    padding-left: 1.5rem;
-    padding-top: 20px;
-    padding-right: 1.5rem;
+    padding: 0;
     position:relative;
     display:grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(12, 1fr);
 }
-
-.section.cards-container.card-details ul li .cards-card-body p:first-of-type{
-position: absolute;
-left:1.5rem;
-top: 22rem;
-text-decoration: underline;
-color: #0a41c5;
-font-size: 0.875rem;
-cursor: pointer;
-}
+.section.cards-container.card-details ul li .cards-card-body.card-highlight p:first-child, .section.cards-container.card-details ul li .cards-card-body.card-highlight p:nth-child(2) {
+  display: none;
+} 
 .section.cards-container.card-details ul li .cards-card-body p,h5{
-  left: 11.5rem;
-  right: 10rem;
-  width: 61%;
   position: relative;
   font-size: .875rem;
-  line-height: 1.25;
+  line-height: 1.6;
   font-family: HelveticaNeueLTW06-65Medium,"Helvetica Neue",Helvetica,Arial,sans-serif;
   margin: 0 0 1rem;
-  color: #2c2c2c;
+  color: #001e79;
+  letter-spacing: 0.01rem;
   
 }
-
+.section.cards-container.card-details ul li .cards-card-body p strong {
+  font-size: 1.125rem;
+  display: block;
+  line-height: 1.75rem;
+}
+.section.cards-container.card-details ul li .cards-card-body p:nth-child(6), .section.cards-container.card-details ul li .cards-card-body p:nth-child(5), .section.cards-container.card-details ul li .cards-card-body p:nth-child(7), .section.cards-container.card-details ul li .cards-card-body p:nth-child(8) {
+  width: 49%;
+  display: inline-block;
+  vertical-align: top;
+  padding-right: 10px;
+  box-sizing: border-box;
+}
 .section.cards-container.card-details ul li .cards-card-body p a sup{
   text-decoration:underline;
 }
@@ -462,34 +409,40 @@ font-weight: 500;
 }
 
 .section.cards-container.card-details ul li .cards-card-body h4{
-margin-top: 28px;
+margin-top: 15px;
 margin-bottom: 12px;
-color: #2c2c2c;
-line-height: 3.5;
-font-weight: 500;
-font-size: 1.5rem;
-margin-bottom: 0;
+color: #001e79;
+line-height: 2rem;
+font-weight: 600;
+font-size: 2rem;
+margin-bottom: 1rem;
 font-family: HelveticaNeueLTW06-65Medium,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 .section.cards-container.card-details .cards-card-image{
-  top: 138px;
-  position:absolute;
-  left:1.5rem;
-  /* width:250px; */
+  padding: 24px;
+  grid-column: auto / span 2;
+  position: relative;
+}
+.section.cards-container.card-details .cards-card-image:after {
+  content: '';
+  position: absolute;
+  right: 0;
+  width: 1px;
+  height: calc(100% - 40px);
+  top: 20px;
+  border-right: 1px solid #eeeef2;
 }
 .section.cards-container.card-details .cards-card-image img{
 max-width: 7.8125rem;
   max-height: 12.5rem;
 }
 .section.cards-container.card-details .cards-card-body h3{
-  position:absolute;
-  top: 20px;
   background-color: transparent;
-  color: #2c2c2c;
+  color: #001e79;
   margin-bottom: 8px;
   font-size: .875rem;
-  line-height: 2.5;
+  line-height: 1.5;
   font-weight: 500;
   margin-bottom: 0.5rem;
   text-transform: uppercase;
@@ -499,7 +452,14 @@ max-width: 7.8125rem;
 }
 
 .section.cards-container.card-details .cards-card-body{
-  grid-column: 1/-1 !important;
+  grid-column: auto / span 8 !important;
+  padding: 24px;
+}
+.section.cards-container.card-details .cards-card-body.card-highlight {
+  grid-column: auto / span 2 !important;
+  background-color: #f5f5fa;
+  padding: 20px;
+  margin-top: 0 !important;
 }
 
 .section.cards-container.card-details .cards-card-body .button-container a{
@@ -512,7 +472,7 @@ color: #0a41c5;
       position: relative;
       transition: text-decoration 1s;
       user-select: none;
-      background-color: white;
+      background-color: transparent;
       padding: 0;
       text-decoration: underline; 
 }
@@ -527,33 +487,32 @@ padding-bottom: 1.5rem;
 text-align: center;
 margin-top: 3rem;
 }
-.section.cards-container.card-details ul li .cards-card-body:last-of-type a:first-of-type{
+.section.cards-container.card-details ul li .cards-card-image a:first-of-type{
  border: 0.0625rem solid #0a41cf;
  background-color: #0a41cf;
  color: #fff;
  border-radius: 0.25rem;
  font-family: inherit;
  float: left;
- font-size: 1rem;
+ font-size: 0.875rem;
  text-align: center;
- padding: 0.75rem 5.5rem;
+ padding: 0.5rem 0.75rem;
  /* width: 50%; */
  text-decoration:none;
+ margin-bottom: 10px;
 }
 
-.section.cards-container.card-details ul li .cards-card-body:last-of-type a:first-of-type:hover{
+.section.cards-container.card-details ul li .cards-card-image a:first-of-type:hover{
   background: linear-gradient(-180deg,#0a41cf 0,#0c2074 100%);
 }
 
-.section.cards-container.card-details ul li .cards-card-body:last-of-type a{
- font-size: 1rem;
+.section.cards-container.card-details ul li .cards-card-image a{
+ font-size: 0.875rem;
  text-align: center;
- padding: 0.75rem 3.5rem;
+ padding: 0.5rem 0.75rem;
  text-decoration:underline;
- /* margin-bottom:12px; */
  color: #0a41c5;
- /* width: 50%; */
- /* float: right; */
+ border: 1px solid #235ae4;
 }
 
 .section.cards-container.card-details ul li .cards-card-body:last-of-type a:hover{
@@ -624,7 +583,7 @@ body > main > div:nth-child(5){
     padding-left: 1.25rem;
     padding-top: 0px;
     padding-right: 1.25rem;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(12, 1fr);
 }
 .section.cards-container.card-details .cards-card-body h3{
   position:relative;
@@ -644,11 +603,8 @@ body > main > div:nth-child(5){
 }
 
 .section.cards-container.card-details .cards-card-image{
-  top: 1.5rem;
-  position:absolute;
-  right: 1.5rem;
-  /* width:250px; */
   left: unset;
+  grid-column: auto / span 2;
 }
 .section.cards-container.card-details .cards-card-image img{
     max-width: 3.75rem;
@@ -657,7 +613,6 @@ body > main > div:nth-child(5){
 
 .section.cards-container.card-details ul li .cards-card-body p,h5{
   left: 0;
-  right: 10rem;
   width: 100%;
 }
 .section.cards-container.card-details ul li .cards-card-body p:first-of-type{
